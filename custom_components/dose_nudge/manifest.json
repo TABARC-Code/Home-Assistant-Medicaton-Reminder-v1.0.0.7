@@ -1,0 +1,12 @@
+{
+  "domain": "dose_nudge",
+  "name": "Dose Nudge",
+  "version": "1.0.0.7",
+  "documentation": "https://github.com/TABARC-Code/",
+  "issue_tracker": "https://github.com/TABARC-Code/issues",
+  "dependencies": [],
+  "codeowners": ["@TABARC-Code"],
+  "requirements": [],
+  "config_flow": true,
+  "iot_class": "local_polling"
+}

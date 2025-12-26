@@ -1,0 +1,16 @@
+{
+  "title": "Dose Nudge",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Dose Nudge",
+        "description": "Local medication reminders. No cloud. No guesses.",
+        "data": {
+          "medication_id": "Medication ID",
+          "name": "Name",
+          "interval_hours": "Interval (hours)"
+        }
+      }
+    }
+  }
+}

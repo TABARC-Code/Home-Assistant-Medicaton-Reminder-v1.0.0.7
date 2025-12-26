@@ -1,0 +1,22 @@
+mark_taken:
+  name: Mark taken
+  description: Mark a dose as taken. Safe to call twice.
+  fields:
+    medication_id:
+      name: Medication ID
+      description: The medication id used by the integration.
+      required: true
+      example: "morning_med"
+
+refill:
+  name: Refill
+  description: Add to remaining doses. Rejects negative amounts.
+  fields:
+    medication_id:
+      name: Medication ID
+      required: true
+      example: "morning_med"
+    amount:
+      name: Amount
+      required: true
+      example: 30

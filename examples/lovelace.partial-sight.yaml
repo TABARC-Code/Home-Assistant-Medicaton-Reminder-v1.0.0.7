@@ -1,0 +1,37 @@
+# Dose Nudge - Lovelace examples (partial sight friendly)
+#
+# You need the PNGs accessible under /local/.
+#
+# Recommended (stable):
+#   copy repo `www/dose_nudge/` -> /config/www/dose_nudge/
+#   then use /local/dose_nudge/...
+#
+# If you rely on HACS:
+#   assets typically land in /config/www/community/<repo>/...
+#   then use /local/community/<repo>/www/dose_nudge/...
+#
+# Replace entity IDs with yours.
+
+type: custom:button-card
+name: Take medication
+entity: binary_sensor.dose_nudge_dose_due
+show_state: true
+show_icon: false
+tap_action:
+  action: call-service
+  service: dose_nudge.mark_taken
+  service_data:
+    medication_id: morning_med
+custom_fields:
+  img: >
+    [[[
+      return `<img src="/local/dose_nudge/icons/tablet/tablet_icon_128px.png" style="width:96px;height:96px;" />`;
+    ]]]
+styles:
+  card:
+    - height: 140px
+    - padding: 16px
+  name:
+    - font-size: 24px
+  state:
+    - font-size: 20px

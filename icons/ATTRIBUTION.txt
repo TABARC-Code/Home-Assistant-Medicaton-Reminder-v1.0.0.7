@@ -1,0 +1,3 @@
+Icons generated in-repo for Dose Nudge.
+Author: TABARC-Code
+No third-party assets.
